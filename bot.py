@@ -31,8 +31,8 @@ logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(name)s - %(leve
 logger = logging.getLogger(__name__)
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
-# Import From Framework
-# from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
+Import From Framework
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 
 from pyrogram.types import *
 
