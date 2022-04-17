@@ -120,7 +120,7 @@ async def start(bot, message):
     ban_duration = ban_status['ban_duration']
     ban_reason = ban_status['ban_reason']
     if is_banned is True:
-        await message.reply_text(f"You are Banned 🚫 to use this bot for **{ban_duration}** day(s) for the reason __{ban_reason}__ \n\n**Message from the admin 🤠**")
+        await message.reply_text(f"You are B A N N E D 🚫 to use this bot for **{ban_duration}** day(s) for the reason __{ban_reason}__ \n\n**Message from the admin 🤠**")
         return
       
     await bot.send_message(
@@ -131,7 +131,7 @@ async def start(bot, message):
     await message.reply_text(
         text="**Hi {}!**\n".format(message.chat.first_name)+C.START,
         reply_markup=InlineKeyboardMarkup([
-            [ InlineKeyboardButton(text="🛠SUPPORT🛠", url=f"{C.SUPPORT_GROUP}"), InlineKeyboardButton(text="📮UPDATES📮", url=f"{C.UPDATE_CHANNEL}")]
+            [ InlineKeyboardButton(text="Creator", url=f"{C.SUPPORT_GROUP}")]
         ])
     )
 
@@ -152,13 +152,13 @@ async def help(bot, message):
     ban_duration = ban_status['ban_duration']
     ban_reason = ban_status['ban_reason']
     if is_banned is True:
-        await message.reply_text(f"You are Banned 🚫 to use this bot for **{ban_duration}** day(s) for the reason __{ban_reason}__ \n\n**Message from the admin 🤠**")
+        await message.reply_text(f"You are B A N N E D 🚫 to use this bot for **{ban_duration}** day(s) for the reason __{ban_reason}__ \n\n**Message from the admin 🤠**")
         return
       
     await message.reply_text(
         text=C.HELP,
         reply_markup=InlineKeyboardMarkup([
-            [ InlineKeyboardButton(text="🛠SUPPORT🛠", url=f"{C.SUPPORT_GROUP}"), InlineKeyboardButton(text="📮UPDATES📮", url=f"{C.UPDATE_CHANNEL}")]
+            [ InlineKeyboardButton(text="MY BOSS", url=f"{C.SUPPORT_GROUP}")]
         ])
     )
 
@@ -181,11 +181,11 @@ async def donate(bot, message):
     ban_duration = ban_status['ban_duration']
     ban_reason = ban_status['ban_reason']
     if is_banned is True:
-        await message.reply_text(f"You are Banned 🚫 to use this bot for **{ban_duration}** day(s) for the reason __{ban_reason}__ \n\n**Message from the admin 🤠**")
+        await message.reply_text(f"You are B A N N E D 🚫 to use this bot for **{ban_duration}** day(s) for the reason __{ban_reason}__ \n\n**Message from the admin 🤠**")
         return
         
     await message.reply_text(
-        text=C.DONATE + "If You Liked This Bot You Can Also Donate Creator through BTC `3AKE4bNwb9TsgaofLQxHAGCR9w2ftwFs2R`",
+        text=C.DONATE + "If You Liked This Bot You Can Also Donate Creator Contact @HarshXDx",
         reply_markup=InlineKeyboardMarkup([
             [ InlineKeyboardButton(text="DONATE", url=f"{donate_link}")]
         ])
@@ -266,7 +266,7 @@ async def ban(c, m):
         try:
             await c.send_message(
                 user_id,
-                f"You are Banned 🚫 to use this bot for **{ban_duration}** day(s) for the reason __{ban_reason}__ \n\n**Message from the admin 🤠**",
+                f"You are B A N N E D 🚫 to use this bot for **{ban_duration}** day(s) for the reason __{ban_reason}__ \n\n**Message from the admin 🤠**",
             )
             ban_log_text += "\n\nUser notified successfully!"
         except BaseException:
@@ -302,7 +302,7 @@ async def unban(c, m):
         unban_log_text = f"Unbanning user 🤪 {user_id}"
 
         try:
-            await c.send_message(user_id, f"Your ban was lifted!")
+            await c.send_message(user_id, f"You Are U N B A N N E D !")
             unban_log_text += "\n\n✅ User notified successfully! ✅"
         except BaseException:
             traceback.print_exc()
@@ -364,7 +364,7 @@ async def pm_text(bot, message):
     ban_duration = ban_status['ban_duration']
     ban_reason = ban_status['ban_reason']
     if is_banned is True:
-        await message.reply_text(f"You are Banned 🚫 to use this bot for **{ban_duration}** day(s) for the reason __{ban_reason}__ \n\n**Message from the admin 🤠**")
+        await message.reply_text(f"You are B A N N E D 🚫 to use this bot for **{ban_duration}** day(s) for the reason __{ban_reason}__ \n\n**Message from the admin 🤠**")
         return
       
     if message.from_user.id == owner_id:
